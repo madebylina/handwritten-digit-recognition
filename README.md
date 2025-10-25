@@ -1,42 +1,41 @@
 # Handwritten Digit Recognition
 
-## Overview
-
-The "Handwritten Digit Recognition" is a simple yet effective tool for recognizing handwritten digits. This project is powered by a machine learning model originally trained with PyTorch, and the outputs have been adapted to JavaScript format for use in the browser. The application utilizes arrays and matrices to represent biases and weights, allowing for quick and efficient digit recognition.
+A simple web app that recognizes handwritten digits using a neural network. Draw a number, and it'll tell you what it thinks you drew.
 
 ## How It Works
 
-The core of the "Handwritten Digit Recognition" is a neural network, which is a computational model inspired by the human brain. It consists of layers of interconnected nodes or "neurons" that process input data, learn from it, and make predictions. In this case, the model predicts handwritten digits from 0 to 9 using learned weights and biases from the training phase.
+The app uses a neural network (basically a simplified version of how our brains work) to recognize digits from 0 to 9. The model was originally trained in PyTorch and then converted to JavaScript so it can run right in your browser. It uses the learned patterns (weights and biases) to make predictions about what digit you've drawn.
 
-## Live Demo
-[Try the application online](https://hoffhannisyan.github.io/handwritten-digit-recognition/): Draw any digit (0-9) on the canvas and see the neural network predict it in real-time!
+## Try It Out
 
-## Running the Project
+**[✏️ Live Demo](https://hoffhannisyan.github.io/handwritten-digit-recognition/)**
 
-To use the "Handwritten Digit Recognition":
+Just draw any digit on the canvas and watch it predict in real-time! The bar chart shows how confident the model is about each possible digit.
 
-1. Clone the project from the GitHub repository.
-2. Ensure you have Node.js installed on your local machine.
-3. Navigate to the project directory in your terminal.
-4. Run the project using the command `npm run start` or `node app.js`.
-5. Open your web browser and go to `localhost:8080`.
+## Running Locally
 
-You'll be greeted with a canvas where you can draw a digit using your mouse or touchscreen. Upon drawing, the prediction chart next to the canvas will display the recognized digit, with the height of the columns representing the model's confidence in its prediction.
+Want to run it on your machine?
 
-## Technologies Used
+1. Clone the repo
+2. Make sure you have Node.js installed
+3. Open your terminal and navigate to the project folder
+4. Run `npm run start` or `node app.js`
+5. Open your browser and go to `localhost:8080`
 
-The project is built with HTML, CSS, and JavaScript, running on Node.js without the need for any third-party dependencies or Node.js frameworks. For digit drawing, the HTML5 Canvas API is employed.
+Draw a digit on the canvas with your mouse (or finger on touch screens), and the chart next to it will show what the model thinks it is. The taller the bar, the more confident it is about that number.
 
-## About PyTorch and Neural Networks
+## Tech Stack
 
-[PyTorch](https://pytorch.org/) is an open-source machine learning library used for applications such as computer vision and natural language processing. It's known for its flexibility and ease of use in building and training neural networks.
+Built with vanilla HTML, CSS, and JavaScript running on Node.js. Uses the HTML5 Canvas API for drawing. No frameworks or external dependencies needed.
+
+## About the Neural Network
+
+The model was trained using [PyTorch](https://pytorch.org/), a popular open-source machine learning library. PyTorch is widely used for things like computer vision and natural language processing because it's flexible and easy to work with.
 
 ## License
 
-This project is open-sourced under the MIT license. For more details, see the [LICENSE](./LICENSE) file in the project repository.
+MIT License - check the [LICENSE](./LICENSE) file for details.
 
 ---
 
-We believe in the power of JavaScript in machine learning to create accessible and efficient applications. By leveraging modern web technologies, we bring AI capabilities directly to your browser, making it easy for anyone to benefit from the advancements in machine learning.
-
-Enjoy using the "Handwritten Digit Recognition", and feel free to contribute or provide feedback!
+Feel free to try it out, contribute, or share your feedback!
